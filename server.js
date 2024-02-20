@@ -1,6 +1,8 @@
 const express = require("express")
 const app = express()
 
-app.listen(3000, ()=> {
-    console.log("port connected");
+app.listen(5001, ()=> {
+    console.log("port connected on port 5001");
 })
+
+app.get('/', (req,res) => res.json('My API Running'))
